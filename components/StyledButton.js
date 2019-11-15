@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
@@ -13,7 +14,9 @@ import StyledSpinner from './StyledSpinner';
  *
  * @see See [styled-system docs](https://github.com/jxnblk/styled-system/blob/master/docs/api.md) for usage of those props
  */
-const StyledButtonContent = styled.button`
+const StyledButtonContent = styled.button.attrs(({ ariaLabel }) => ({
+  'aria-label': ariaLabel,
+}))`
   appearance: none;
   border: none;
   cursor: pointer;

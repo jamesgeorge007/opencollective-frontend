@@ -153,7 +153,7 @@ const Hero = ({ collective, host, isAdmin, onPrimaryColorChange, callsToAction, 
                 title="Twitter"
                 openInNewTab
               >
-                <StyledRoundButton size={32} mr={3}>
+                <StyledRoundButton size={32} mr={3} aria-label="Twitter link">
                   <Twitter size={12} />
                 </StyledRoundButton>
               </ExternalLink>
@@ -165,7 +165,7 @@ const Hero = ({ collective, host, isAdmin, onPrimaryColorChange, callsToAction, 
                 title="Github"
                 openInNewTab
               >
-                <StyledRoundButton size={32} mr={3}>
+                <StyledRoundButton size={32} mr={3} aria-label="Github link">
                   <Github size={12} />
                 </StyledRoundButton>
               </ExternalLink>
@@ -177,7 +177,7 @@ const Hero = ({ collective, host, isAdmin, onPrimaryColorChange, callsToAction, 
                 title={intl.formatMessage(Translations.website)}
                 openInNewTab
               >
-                <StyledRoundButton size={32} mr={3}>
+                <StyledRoundButton size={32} mr={3} aria-label="Website link">
                   <Globe size={14} />
                 </StyledRoundButton>
               </ExternalLink>
