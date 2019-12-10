@@ -937,6 +937,7 @@ class CreateOrderPage extends React.Component {
           {isPaypal && step.isLastStep ? (
             <PaypalButtonContainer>
               <PayWithPaypalButton
+                // TODO: we need to passe the host or the collective (so we can deduce the host)
                 totalAmount={this.getTotalAmountWithTaxes()}
                 currency={this.getCurrency()}
                 style={{ size: 'responsive', height: 55 }}
