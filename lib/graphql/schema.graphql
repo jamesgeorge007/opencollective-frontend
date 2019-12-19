@@ -1,5 +1,5 @@
 # source: http://localhost:3060/graphql
-# timestamp: Thu Dec 12 2019 20:59:40 GMT+0100 (GMT+01:00)
+# timestamp: Thu Dec 19 2019 13:27:55 GMT+0100 (Central European Standard Time)
 
 """
 Application model
@@ -1785,6 +1785,26 @@ type Mutation {
     id: Int!
   ): NotificationType
   backyourstackDispatchOrder(id: Int!): BackYourStackDispatchState
+
+  """
+  Activate a collective as Host.
+  """
+  activateCollectiveAsHost(
+    """
+    ID of the collective (Organization or User)
+    """
+    id: Int!
+  ): CollectiveInterface
+
+  """
+  Deactivate a collective as Host.
+  """
+  deactivateCollectiveAsHost(
+    """
+    ID of the collective (Organization or User)
+    """
+    id: Int!
+  ): CollectiveInterface
 }
 
 """
